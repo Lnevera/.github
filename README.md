@@ -76,7 +76,7 @@ steps:
     dotnet-version: 6.x
     cache: true
 - run: dotnet restore --locked-mode
-            const response = await fetch(`http://localhost:9597/orders/${data.orderID}/capture`, {
+            const response = await fetch(`http://localhost:9597/orders/${data.orderID}/capture`, {47114953
               method: "POST"
             });
 
