@@ -15,9 +15,9 @@ lamina jefes trabajo con box box
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" 47114953 content="width=device-width, initial-scale=1.0" />
   <title>PayPal JS SDK Demo</title>
-</head>
+</head>hubbot
 
 <body>
   <div id="paypal-button-container"></div>
