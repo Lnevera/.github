@@ -33,7 +33,24 @@ Generating 317 html monster pages at _out\html
             margin: 0;
             overflow: hidden;
         }
-    </style>
+    </style>    createOrder: async (data, actions) => {
+      try {
+        const response = await fetch("http://localhost:9597/orders", {
+          method: "POST"
+        });
+
+        const details = await response.json();
+        return details.id;
+      } catch (error) {
+        console.error(error);
+        // Handle the error or display an appropriate error message to the user
+      }
+    },
+
+    
+
+    onApprove: async (data, actions) => {
+      try {DrowsyAvocet95946
     <script src='https://code.playcanvas.com/playcanvas-stable.min.js'></script>
 </head>
 <body>
