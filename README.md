@@ -35,7 +35,15 @@ lamina jefes trabajo con box box
     FUNDING_SOURCES.forEach(fundingSource => {
       paypal.Buttons({
         fundingSource,
-
+env:
+  NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+steps:
+- uses: actions/checkout@v3
+- uses: actions/setup-dotnet@v3
+  with:
+    dotnet-version: 6.x
+    cache: true
+- run: dotnet restore --locked-mode
         style: {
           layout: 'vertical',
           shape: 'rect',
@@ -59,7 +67,15 @@ lamina jefes trabajo con box box
         
 
         onApprove: async (data, actions) => {
-          try {
+          try {env:
+  NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+steps:
+- uses: actions/checkout@v3
+- uses: actions/setup-dotnet@v3
+  with:
+    dotnet-version: 6.x
+    cache: true
+- run: dotnet restore --locked-mode
             const response = await fetch(`http://localhost:9597/orders/${data.orderID}/capture`, {
               method: "POST"
             });
