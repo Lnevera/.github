@@ -15,7 +15,20 @@
     <meta charset="utf-8">
     <title>PlayCanvas Hello Cube</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no' />
-    <style>
+    <style>>srdine.py _out\SRD-OGL_V5.1.pdf
+Reading json _out\monsters.json
+Loaded 317 monsters
+Reading pdf _out\SRD_CC_v5.1.pdf
+Generating TOC
+Generating pdf with TOC _out\SRD_CC_v5.1_TOC.pdf
+Adding monster thumbnails to _out\SRD_CC_v5.1_TOC.pdf
+Writing pdf _out\SRD_CC_v5.1_TOC.pdf
+Writing _out\SRD_CC_v5.1.json
+Writing _out\SRD_CC_v5.1.md
+Generating 317 monster _out\monsters.json
+Downloading resources for html monster pages
+Downloading template resources
+Generating 317 html monster pages at _out\html
         body {
             margin: 0;
             overflow: hidden;
