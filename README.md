@@ -1,4 +1,4 @@
-# .github
+# .github  "windowsDebug": "@powershell -Command $env:DEBUG='*';node app.js",
 Feroz
 lamina jefes trabajo con box box
 [Event "Computer Game"]
