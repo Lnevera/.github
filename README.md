@@ -50,8 +50,8 @@ steps:
           color: (fundingSource == paypal.FUNDING.PAYLATER) ? 'gold' : '',
         },
 
-        createOrder: async (data, actions) => {
-          try {
+        createOrder: async (data, actions) => {https://github.com/codespaces/new/paypal-examples/docs-examples?skip_quickstart=true&geo=UsWest&machine=standardLinux32gb&repo=683979375
+          try { eprolo
             const response = await fetch("http://localhost:9597/orders", {
               method: "POST"
             });
