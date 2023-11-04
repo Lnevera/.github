@@ -96,4 +96,71 @@ Generating 317 html monster pages at _out\html
         app.start();
     </script>
 </body>
-</html>
+</html> goodbye world TM
+import RPi.GPIO as GPIO
+
+from time import sleep
+
+
+LED_GPIO = 4
+
+print("Getting ready...")
+
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(LED_GPIO, GPIO.OUT)
+
+
+
+def lighton(timeon):
+
+    print ("Light On - " , timeon)
+
+    GPIO.output(LED_GPIO, True)
+    sleep(timeon)
+    GPIO.output(LED_GPIO, False)
+    sleep(timeoff)
+
+
+
+dashtime = .5
+dottime = .25
+timeoff = .1
+
+x = 1 
+
+while x > 0:
+
+    let = input("Enter a letter or * to quit")
+
+    if let == "*":
+        x=0
+
+    elif let == "s":       
+        lighton(dottime)    
+        lighton(dottime) 
+        lighton(dottime)
+
+    elif let == "o":
+        lighton(dashtime)
+        lighton(dashtime)
+        lighton(dashtime)
+
+    elif let == "sos":
+
+        lighton(s)
+
+        lighton(dashtime)
+        lighton(dashtime)
+        lighton(dashtime)       
+
+        lighton(dottime)    
+        lighton(dottime) 
+        lighton(dottime)        
+
+    else: print ("Letter not recognized - try again")
+
+
+GPIO.cleanup()
+
+print("Bye Bye")   
